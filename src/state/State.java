@@ -1,17 +1,22 @@
 package state;
 
-import state.state.PlaneImpl;
-
 public abstract class State {
-    protected PlaneImpl plane;
+    protected Distributeur distributeur;
 
-    public State(PlaneImpl plane) {
-        this.plane = plane;
+    public State(Distributeur distributeur){
+        this.distributeur = distributeur;
     }
 
-    public abstract void leaveTheGarage(); // change of state method
-    public abstract void enterTheGarage(); // change of state method
-    public abstract void takeOff(); // change of state method
-    public abstract void land(); // change of state method
-    public abstract void doActivity();
+    public abstract void on();
+    public abstract void off();
+    public abstract void introduirePiece(int v);
+    public abstract void getProduit();
 }
+
+
+
+
+
+
+
+
