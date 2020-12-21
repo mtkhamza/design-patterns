@@ -26,7 +26,6 @@ public class Employee {
         this.salaireBrutMensuel = salaireBrutMensuel;
     }
 
-
     public float getSalaireNetMensuel() {
         float salaireBrutAnnuel = salaireBrutMensuel * 12;
         float igr = strategy.applyIGR(salaireBrutAnnuel);
